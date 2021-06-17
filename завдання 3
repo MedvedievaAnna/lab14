@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int func (int, int);
+int main()
+{
+setlocale(0, "rus"):
+int number;
+int degree;
+
+cout <<"Enter the number:";
+cin >> number;
+cout <<"Enter the degree:";
+cin >> degree;
+cout <<"Number " <<number<< "in the degree" <<degree<<"is equal to" << func(number, degree) <<endl;
+
+system("Pause");
+ }
+ int func (int n, int d)
+ {
+ if (d==0)
+ return 1;
+ if (d==1)
+ return n;
+ else
+ return n * func(n, d-1);
+}
